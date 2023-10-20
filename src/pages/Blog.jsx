@@ -13,7 +13,7 @@ function Blog(props) {
 
               <h1 className="text-center text-3xl font-semibold">{title}</h1>
 
-              <p className='text-center mx-32 my-5'>{introduction}</p>
+              <p className='text-center md:mx-32 my-5'>{introduction}</p>
 
               <img src={img} alt="" />
 

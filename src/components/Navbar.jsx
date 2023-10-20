@@ -45,7 +45,7 @@ function Navbar(props) {
                 {navlinks}
               </ul>
             </div>
-            <h1 className=" text-xl md:text-3xl font-bold ">
+            <h1 className="hidden md:block text-xl md:text-3xl font-bold ">
               <span className="text-orange-600 ">ACE</span> Management
             </h1>
           </div>
@@ -56,17 +56,17 @@ function Navbar(props) {
           </div>
           <div className="navbar-end">
             {user && (
-              <h2 className="text-base text-orange-600 bg-black bg-opacity-10 p-2 rounded font-semibold">
+              <h2 className="text-base text-orange-600  bg-black bg-opacity-10 p-2 rounded font-semibold">
                 {user.email}
               </h2>
             )}
             {user ? (
-              <button className="btn btn-neutral" onClick={hadleLogout}>
+              <button className="btn btn-neutral p-1" onClick={hadleLogout}>
                 Log Out
               </button>
             ) : (
               <NavLink to="/login">
-                <button className="btn btn-accent">Log In</button>
+                <button className="md:btn btn-accent text-white font-semibold p-1">Log In</button>
               </NavLink>
             )}
           </div>

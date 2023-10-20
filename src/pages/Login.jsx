@@ -29,10 +29,10 @@ function Login(props) {
             <div >
 
       <div className="hero min-h-[80vh] sizing bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="md:hero-content flex-col lg:flex-row-reverse">
 
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body" onSubmit={handleLogin}>
+            <form className="md:card-body" onSubmit={handleLogin}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>

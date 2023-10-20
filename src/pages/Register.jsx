@@ -44,9 +44,9 @@ function Register(props) {
     <div>
       <Navbar></Navbar>
       <div className="hero min-h-[80vh] sizing bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body" onSubmit={handleRegister}>
+        <div className="md:hero-content flex-col lg:flex-row-reverse">
+          <div className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100">
+            <form className="md:card-body" onSubmit={handleRegister}>
             <ToastContainer></ToastContainer>
               <div className="form-control">
                 <label className="label">
