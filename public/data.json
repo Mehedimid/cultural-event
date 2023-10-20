@@ -1,0 +1,51 @@
+[
+    {
+      "discount" : "20%",
+      "id": 1,
+      "title": "Heritage Fair",
+      "description": "The Heritage Fair is a grand showcase of the rich history and traditions of our community. Visitors can explore interactive exhibits, attend workshops, and enjoy captivating performances. This event provides a platform for local historians, artisans, and cultural enthusiasts to display artifacts, share stories, and engage visitors in the captivating tapestry of our shared heritage. Whether it's delving into the origins of our town, discovering the roots of local traditions, or celebrating our cultural diversity, the Heritage Fair is an enriching experience that connects the past with the present.",
+      "img": "https://i.ibb.co/Vv4hXFT/photo-1533542632746-8e3f6f06bec6-auto-format-fit-crop-q-80-w-1332-ixlib-rb-4-0.jpg",
+      "price": 10.00
+    },
+    {
+      "discount" : "20%",
+      "id": 2,
+      "title": "Cultural Storytelling Circle",
+      "description": "Join us in a circle of cultural storytelling where the magic of words and narratives from diverse backgrounds come alive. This event celebrates the power of storytelling in bridging cultures and fostering understanding. Community members and storytellers will share tales of wisdom, legends, and personal experiences, offering a glimpse into the unique aspects of different cultures. From oral traditions to modern narratives, the Cultural Storytelling Circle is a journey through the heart and soul of our community, connecting us through the timeless art of storytelling.",
+      "img": "https://i.ibb.co/6ZHxdPB/images-q-tbn-ANd9-Gc-Ts-MM-Wzu-AKvc-FOEt3-Szlqz-Ri-RQxtf6b-PWU4z-GP7t-C7-A-s.jpg",
+      "price": 5.00
+    },
+    {      
+      "discount" : "15%",
+      "id": 3,
+      "title": "Language and Literature Expo",
+      "description": "The Language and Literature Expo is a celebration of words, expressions, and the world of written and spoken language. Explore the beauty of various languages and literary traditions as local authors, poets, and linguists share their works and insights. This event offers a literary journey, with book readings, poetry slams, and discussions on the cultural significance of language. Discover the power of words to connect us to different cultures and explore the diversity of human expression.",
+      "img": "https://i.ibb.co/0Mx9nv4/photo-1470549638415-0a0755be0619-auto-format-fit-crop-q-80-w-1470-ixlib-rb-4-0.jpg",
+      "price": 8.00
+    },
+    {
+      "discount" : "00%",
+      "id": 4,
+      "title": "Traditional Clothing Fashion Show",
+      "description": "Step into a world of vibrant colors, intricate designs, and cultural flair at the Traditional Clothing Fashion Show. This event is a runway extravaganza that showcases the beauty and diversity of traditional attire from around the globe. Models adorned in exquisite clothing from different cultures will grace the stage, allowing the audience to appreciate the craftsmanship, history, and significance of these garments. The Traditional Clothing Fashion Show is a visual journey through fashion, culture, and heritage.",
+      "img": "https://i.ibb.co/0BnhwGX/photo-1543728069-a3f97c5a2f32-auto-format-fit-crop-q-60-w-500-ixlib-rb-4-0.jpg",
+      "price": 15.00
+    },
+    {
+      "discount" : "10%",
+      "id": 6,
+      "title": "Cultural Quiz Night",
+      "description": "The Cultural Quiz Night is an entertaining and educational competition that tests your knowledge of the world's cultures. Gather your team and prepare for a night of trivia, covering topics such as history, customs, traditions, and famous figures from different cultures. With rounds of stimulating questions and friendly rivalry, this event is not only about having fun but also about expanding your horizons and learning about the incredible diversity of our global heritage.",
+      "img": "https://i.ibb.co/kJwR6F5/images-q-tbn-ANd9-Gc-S6x-L7m3e-UUHg-JA5-B3fpdrfm-Bz-VH2f-TYIJ9n-Imef-EGqf-A-s.jpg",
+      "price": 7.50
+    },
+    {
+      "discount" : "20%",
+      "id": 7,
+      "title": "Family Heritage Day",
+      "description": "Family Heritage Day is a unique event that invites families to embark on a journey of self-discovery and cultural exploration. Families are encouraged to explore their own cultural backgrounds, share stories, traditions, and artifacts, and even create displays that showcase their heritage. This event is a heartwarming celebration of the diversity within our community and a beautiful reminder of the connections that bind us through generations.",
+      "img": "https://i.ibb.co/gPnqL2j/images-q-tbn-ANd9-Gc-QGSm83k7h-WXo01-HKr-Pzk-P0-Z0-Hio-Ex-L4h-H9g-usqp-CAU.jpg",
+      "price": 5.00
+    }
+  ]
+  

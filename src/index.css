@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sizing {
+    @apply w-10/12 mx-auto
+}
+a.active{
+    @apply text-orange-600 underline px-2 py-1
+}
