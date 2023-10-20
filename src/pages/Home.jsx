@@ -41,7 +41,7 @@ function Home(props) {
       </section>
 
 <section  className="sizing mb-20">
-<h1 className="text-3xl text-center  text-orange-600  font-bold my-6">Our Branches and Manager</h1>
+<h1 className="text-3xl text-center  text-orange-600  font-bold my-9">Our Branches and Manager</h1>
 <div className="  grid grid-cols-1 md:grid-cols-2 gap-5">
         {
          branches.length &&  branches?.map((branch, idx) => <Branch key={idx} branch={branch}></Branch>)

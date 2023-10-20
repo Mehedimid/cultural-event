@@ -6,7 +6,7 @@ function Discount({ event }) {
   const JoiningPrice = parseFloat(price)- discountPrice
   return (
     <div>
-      <div className="card h-52  bg-pink-300">
+      <div className="card h-52  bg-pink-200">
         <div className="card-body">
           <h2 className="text-base ">
             {title}

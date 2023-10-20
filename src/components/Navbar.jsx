@@ -57,17 +57,18 @@ function Navbar(props) {
           </div>
           <div className="navbar-end">
             {user && (
-              <h2 className="md:text-3xl text-orange-600  bg-black bg-opacity-10 p-2 rounded font-semibold">
+              <h2 className="md:text-xl  flex items-center text-orange-600  bg-black bg-opacity-10 p-2 rounded font-semibold">
+               <small className="hidden md:block"> {user.email}</small>
                <MdMarkEmailRead></MdMarkEmailRead>
               </h2>
             )}
             {user ? (
-              <button className="md:btn btn-secondary text-white  p-1" onClick={hadleLogout}>
+              <button className="md:btn md:btn-secondary btn-secondary text-white  p-1" onClick={hadleLogout}>
                 Log Out
               </button>
             ) : (
               <NavLink to="/login">
-                <button className="md:btn btn-accent text-white font-semibold p-1">Log In</button>
+                <button className="md:btn md:btn-secondary btn-secondary text-white font-semibold p-1">Log In</button>
               </NavLink>
             )}
           </div>

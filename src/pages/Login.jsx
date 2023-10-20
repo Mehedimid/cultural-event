@@ -61,7 +61,7 @@ function Login({location}) {
 
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-accent text-white">Log In</button>
+                <button className="btn btn-secondary text-white">Log In</button>
               </div>
             </form>
             <div className="flex justify-evenly mb-5 items-center">

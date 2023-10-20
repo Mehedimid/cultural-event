@@ -9,7 +9,7 @@ function Offer(props) {
         <div className="hero-content flex-col  lg:flex-row-reverse">
           <img
             src="https://i.ibb.co/GdzKJWB/images-q-tbn-ANd9-Gc-QOSc3-F0urxo-GIhz55tx-Y19-Ey-Hs69cf-D6ger-A-usqp-CAU.jpg"
-            className="max-w-sm rounded-lg shadow-2xl w-1/2"
+            className="max-w-sm w-full rounded-lg shadow-2xl w-1/2"
           />
           <div className="md:w-1/2">
             <h1 className="text-3xl md:text-5xl mb-5 font-bold">Get Offer By Promo Code !</h1>
@@ -29,11 +29,11 @@ function Offer(props) {
         <p className=" mb-5">
         Experience the magic of seamless event planning and execution with us. Whether you're organizing a vibrant festival, an art exhibition, a musical extravaganza, or any cultural event, our dedicated team is here to make your vision a reality.
         </p>
-        <h1 className="text-xl mx-44 font-semibold mb-5">Limited-Time Offer:</h1>
+        <h1 className="text-xl md:mx-44 font-semibold mb-5">Limited-Time Offer:</h1>
         <p className=" mb-5">
         Book your next cultural event with us and enjoy a special limited-time offer! Our seasoned professionals will work closely with you to design, organize, and execute an unforgettable event that celebrates your culture, heritage, and creativity.
         </p>
-        <h3 className="mb-4 mx-44 font-medium">Whats Include:</h3>
+        <h3 className="mb-4 md:mx-44 font-medium">Whats Include:</h3>
         <ul className="md:mx-44 mb-4 text-slate-600">
             <li>1. Personalized event planning consultation.</li>
             <li>2. Tailored event design and theme.</li>

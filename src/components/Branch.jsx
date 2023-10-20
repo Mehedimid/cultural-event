@@ -13,7 +13,7 @@ function Branch({branch}) {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{branch_manager}, <small>{branch_name}</small></h2>
-          <p>{short_description}</p>
+          <p>{short_description.slice(0 , 170)}...</p>
         </div>
       </div>
     </div>

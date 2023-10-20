@@ -4,12 +4,27 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import auth from "../firebase/firebase.config";
 
 function Register(props) {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate()
+  const provider = new GoogleAuthProvider()
   // console.log(createUser)
 
+
+  //====== Log in with google =====
+  const googleHandler = () =>{
+    signInWithPopup(auth, provider)
+    .then(result => {
+      toast.success('wow!!! Successfully Registered!!')
+    })
+    .catch(error => toast.error(error.message))
+  }
+
+
+  // ===== log in with email and pass =====
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -46,6 +61,10 @@ function Register(props) {
       <div className="hero min-h-[80vh] sizing bg-base-200">
         <div className="md:hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100">
+             <div className="mt-5">
+              <button onClick={googleHandler} className="btn btn-accent  w-full">Login with Google</button>
+             </div>
+             <p className="text-center text-xl font-medium mt-5">or</p>
             <form className="md:card-body" onSubmit={handleRegister}>
             <ToastContainer></ToastContainer>
               <div className="form-control">
