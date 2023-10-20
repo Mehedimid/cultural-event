@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Register(props) {
   return (
@@ -16,6 +17,7 @@ function Register(props) {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                   required
@@ -27,6 +29,7 @@ function Register(props) {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
@@ -37,6 +40,9 @@ function Register(props) {
                 <button className="btn btn-secondary text-white">Register</button>
               </div>
             </form>
+            <div className="flex justify-evenly mb-5 items-center">
+                <p className="inline">Already Registered?</p><Link to='/login' className="underline text-orange-600 font-semibold text-xl">Log In</Link>
+            </div>
           </div>
         </div>
       </div>
