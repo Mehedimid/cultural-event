@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 function Navbar(props) {
-  const navlinks = <>
-     <NavLink to='/'>Home</NavLink>
-     <NavLink to='/offer'>Offer</NavLink>
-     <NavLink to='/blog'>Blog</NavLink>
+  const { user, logOut } = useContext(AuthContext);
 
-  </>
+  const hadleLogout = () => {
+    logOut()
+      .then(() => console.log("logged out"))
+      .catch((error) => console.error(error.message));
+  };
+
+  const navlinks = (
+    <>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/offer">Offer</NavLink>
+      <NavLink to="/blog">Blog</NavLink>
+    </>
+  );
   return (
     <>
       <div className="py-4">
@@ -41,11 +51,24 @@ function Navbar(props) {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal items-center text-base gap-7 font-medium px-1">
-             {navlinks}
+              {navlinks}
             </ul>
           </div>
           <div className="navbar-end">
-          <NavLink to='/login'><button className="btn btn-accent">Log In</button></NavLink>
+            {user && (
+              <h2 className="text-base text-orange-600 bg-black bg-opacity-10 p-2 rounded font-semibold">
+                {user.email}
+              </h2>
+            )}
+            {user ? (
+              <button className="btn btn-neutral" onClick={hadleLogout}>
+                Log Out
+              </button>
+            ) : (
+              <NavLink to="/login">
+                <button className="btn btn-accent">Log In</button>
+              </NavLink>
+            )}
           </div>
         </div>
       </div>
