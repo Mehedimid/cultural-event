@@ -22,11 +22,11 @@ const router = createBrowserRouter([
         },
         {
           path:'/offer',
-          element:<Offer></Offer>
+          element:<PrivateRoute><Offer></Offer></PrivateRoute>
         },
         {
           path:'/blog',
-          element:<Blog></Blog>,
+          element:<PrivateRoute><Blog></Blog></PrivateRoute>,
           loader:()=>fetch('/blog.json')
         },
         {

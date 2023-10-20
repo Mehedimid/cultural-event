@@ -22,7 +22,7 @@ function Offer(props) {
         </div>
       </div>
 
-      <div className="md:mx-44 mx:pr-30 mb-20">
+      <div className="mx-2 md:mx-44 mx:pr-30 mb-20">
         <p className=" mb-5">
         "Welcome to ACE, your premier destination for expert cultural event management. We're passionate about bringing cultural experiences to life, and we're excited to offer you an exclusive promotion!
         </p>

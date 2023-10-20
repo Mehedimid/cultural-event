@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { MdMarkEmailRead } from 'react-icons/md';
 
 function Navbar(props) {
   const { user, logOut } = useContext(AuthContext);
@@ -45,8 +46,8 @@ function Navbar(props) {
                 {navlinks}
               </ul>
             </div>
-            <h1 className="hidden md:block text-xl md:text-3xl font-bold ">
-              <span className="text-orange-600 ">ACE</span> Management
+            <h1 className="text-base md:text-3xl font-bold ">
+              <span className="text-orange-600 text-lg md:text-3xl">ACE</span> Management
             </h1>
           </div>
           <div className="navbar-center hidden lg:flex">
@@ -56,12 +57,12 @@ function Navbar(props) {
           </div>
           <div className="navbar-end">
             {user && (
-              <h2 className="text-base text-orange-600  bg-black bg-opacity-10 p-2 rounded font-semibold">
-                {user.email}
+              <h2 className="md:text-3xl text-orange-600  bg-black bg-opacity-10 p-2 rounded font-semibold">
+               <MdMarkEmailRead></MdMarkEmailRead>
               </h2>
             )}
             {user ? (
-              <button className="btn btn-neutral p-1" onClick={hadleLogout}>
+              <button className="md:btn btn-secondary text-white  p-1" onClick={hadleLogout}>
                 Log Out
               </button>
             ) : (

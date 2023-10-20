@@ -4,9 +4,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 
-function Login(props) {
+function Login({location}) {
     const {logInUser} = useContext(AuthContext)
     const navigate = useNavigate()
+   
+
     const handleLogin = e =>{
         e.preventDefault()
         const email = e.target.email.value 
@@ -16,7 +18,7 @@ function Login(props) {
       logInUser(email, password) 
       .then(res => {
         console.log(res.user)
-        navigate('/')
+        navigate(location || '/')
       })
       .catch(error => {
         toast.error(error.message)
