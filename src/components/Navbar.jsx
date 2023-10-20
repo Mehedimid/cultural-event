@@ -6,7 +6,7 @@ function Navbar(props) {
      <NavLink to='/'>Home</NavLink>
      <NavLink to='/offer'>Offer</NavLink>
      <NavLink to='/blog'>Blog</NavLink>
-     <NavLink to='/login'>Log In</NavLink>
+
   </>
   return (
     <>
@@ -35,14 +35,17 @@ function Navbar(props) {
                 {navlinks}
               </ul>
             </div>
-            <h1 className=" text-xl md:text-4xl font-bold ">
+            <h1 className=" text-xl md:text-3xl font-bold ">
               <span className="text-orange-600 ">ACE</span> Management
             </h1>
           </div>
-          <div className="navbar-end hidden lg:flex">
+          <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal items-center text-base gap-7 font-medium px-1">
              {navlinks}
             </ul>
+          </div>
+          <div className="navbar-end">
+          <NavLink to='/login'><button className="btn btn-accent">Log In</button></NavLink>
           </div>
         </div>
       </div>

@@ -1,0 +1,26 @@
+[
+    {
+      "branch_name": "America Branch",
+      "short_description": "Our flagship branch located in the heart of New York, USA, has been the hub for our cultural event management services. We have organized numerous successful events, and our team is dedicated to providing top-notch cultural experiences.",
+      "branch_manager": "John Smith",
+      "image_url": "https://api.time.com/wp-content/uploads/2015/02/office-space-america.jpg"
+    },
+    {
+      "branch_name": "India Branch",
+      "short_description": "Our India branch brings the richness of Indian culture to our events. With a team of passionate professionals, we create memorable cultural experiences for our clients and attendees.",
+      "branch_manager": "Priya Patel",
+      "image_url": "https://i.ibb.co/DkcS0GY/images-q-tbn-ANd9-Gc-SX4rz-R-49-Pgnr-AIIBb8u6re-J5wdy-Iyh-Wvc3w-usqp-CAU.jpg"
+    },
+    {
+      "branch_name": "Bangladesh Branch",
+      "short_description": "Our Bangladesh branch is committed to showcasing the vibrant culture of Bangladesh through our events. Our experienced team ensures that every cultural event is a success.",
+      "branch_manager": "Rahul Khan",
+      "image_url": "https://i.ytimg.com/vi/W1HngDX0Z1c/maxresdefault.jpg"
+    },
+    {
+      "branch_name": "Sri Lanka Branch",
+      "short_description": "In our Sri Lanka branch, we celebrate the beauty and diversity of Sri Lankan culture. Our dedicated team is passionate about organizing culturally rich events that leave a lasting impression.",
+      "branch_manager": "Nimala Rajapakse",
+      "image_url": "https://cdn.britannica.com/61/192661-050-997DE572/Colombo-Sri-Lanka.jpg"
+    }
+]
