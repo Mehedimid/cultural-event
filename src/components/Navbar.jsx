@@ -21,7 +21,7 @@ function Navbar(props) {
   );
   return (
     <>
-      <div className="py-4">
+      <div className="py-4 bg-black bg-opacity-20">
         <div className="navbar sizing ">
           <div className="navbar-start">
             <div className="dropdown">

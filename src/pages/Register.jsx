@@ -58,6 +58,7 @@ function Register(props) {
   return (
     <div>
       <Navbar></Navbar>
+      <h1 className="my-10 text-center font-bold text-3xl">Please Register Here</h1>
       <div className="hero min-h-[80vh] sizing bg-base-200">
         <div className="md:hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100">

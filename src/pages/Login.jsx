@@ -3,10 +3,26 @@ import Navbar from '../components/Navbar';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import auth from '../firebase/firebase.config';
 
 function Login({location}) {
     const {logInUser} = useContext(AuthContext)
     const navigate = useNavigate()
+
+    const provider = new GoogleAuthProvider()
+    // console.log(createUser)
+  
+  
+    //====== Log in with google =====
+    const googleHandler = () =>{
+      signInWithPopup(auth, provider)
+      .then(result => {
+        toast.success('wow!!! Successfully Logged in!!')
+      })
+      .catch(error => toast.error(error.message))
+    }
+  
    
 
     const handleLogin = e =>{
@@ -30,10 +46,13 @@ function Login({location}) {
             <Navbar></Navbar>
             <div >
 
-      <div className="hero min-h-[80vh] sizing bg-base-200">
+      <div className="hero min-h-[80vh] sizing bg-base-200 py-10">
         <div className="md:hero-content flex-col lg:flex-row-reverse">
-
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="mt-5">
+              <button onClick={googleHandler} className="btn btn-accent  w-full">Login with Google</button>
+             </div>
+             <p className="text-center text-xl font-medium mt-5">or</p>
             <form className="md:card-body" onSubmit={handleLogin}>
               <div className="form-control">
                 <label className="label">
