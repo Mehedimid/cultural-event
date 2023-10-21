@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../components/Navbar';
 import { useLoaderData } from 'react-router-dom';
 import BlogItem from '../components/BlogItem';
+// import { AuthContext } from '../AuthProvider/AuthProvider';
 
 function Blog(props) {
+    // const {loading} = useContext(AuthContext)
     const blogs = useLoaderData()
     const {title, img, sections, introduction} = blogs
+
     return (
         <div>
             <Navbar></Navbar>
